@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12 Numbers of Sorry</title>
+<style>
+    body{
+        background-image: url(https://media.giphy.com/media/ukFMZImlhutPO/giphy.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Times New Roman;
+        text-align: center;
+        color: Black;
+        margin: 0;
+        }
+
+    .header{
+    background-image: url(lab.jfif);
+	  background-position: center;
+	  font-family: Times New Roman;
+	  color: Black;
+	  font-size: 15px;
+	  padding: 10px;
+	  text-align:center;
+      
+      
+    
+	}
+
+    h3{
+        background-image: url(h3.png);
+        padding: 5px;
+        position: fixed;
+        width: 75%; 
+        position: fixed; 
+        left: 50%; 
+        margin-left: -37.5%; 
+       
+    }
+
+    img{
+        padding: 10px;
+        margin-left: 50px;
+        width: 450px;
+        height: 300px;
+    }
+</style>
+</head>
+
+<body>
+
+    <audio src="audio1.mp3" autoplay></audio>
+
+    <div class= "header">
+        <h1>Hello love</h1>
+    </div>
+
+    <img id="image" src="">
+
+    
+    <script>
+        var number = parseInt(prompt("Please enter a number from 1 to 12: "));
+        var Info = ""; // Declare the 'Info' variable
+        var image = document.getElementById("image");
+
+        if (number === 1) {
+            Info = "<h3>Sorry po kung hindi ko magawa ung tama na ginagawa ng isang boyfriend, sorry sa mga kasalanan ko po.</h3>";
+            image.src = "stitch.gif";
+        } else if (number === 2) {
+            Info = "<h3>Sorry po kung napakabagal ko mag isip at hindi ko maintindihan ung mga sinasabi mo minsan.</h3>";
+            image.src = "ang.gif";
+        } else if (number === 3) {
+            Info = "<h3>Sorry po kung ambilis bili ko maka limot at dahill dun napapagod kana unawain ako.</h3>";
+            image.src = "car.gif";
+        } else if (number === 4) {
+            Info = "<h3>Sorry po kung pati sa mga kasalanan ko ikaw pa kailangan magpa alala.</h3>";
+            image.src = "cat.gif";
+        } else if (number === 5) {
+            Info = "<h3>Sorry po kung sobrang nahihirapan kana sakin at aabot pa sa puntong sobrang na sstress kana at sobrang gulo.</h3>";
+            image.src = "dog.gif";
+        } else if (number === 6) {
+            Info = "<h3>Sorry po kung akala ko na porke nag sorry na ako ay ayos na, ngayon ko lang nalaman na iba pa din ang efforts kesa sa salita.</h3>";
+            image.src = "emoj.gif";
+        } else if (number === 7) {
+            Info = "<h3>Sorry po kung parati na lang ay i spoon feed mo ako sa mga kasalanan na nagawa ko.</h3>";
+            image.src = "fox.gif";
+        } else if (number === 8) {
+            Info = "<h3>Sorry po kung parati na lang joke na pati sa mga sensitive na topic ay akala ko ay joke.</h3>";
+            image.src = "hart.gif";
+        } else if (number === 9) {
+            Info = "<h3>Sorry po kung sobrang insensitive ko na, lalo na sa tuwing maglalabas or magsasabi ka ng salita na gusto mo lang ay kaliwanagan</h3>";
+            image.src = "pengu.gif";
+        } else if (number === 10) {
+            Info = "<h3>Sorry po kung hindi ako naging mabuting boyfriend, alam ko naman na sobrang nasaktan kana pero wala manlang ako nagawa.</h3>";
+            image.src = "rab.gif";
+        } else if (number === 11) {
+            Info = "<h3>Sorry po kung sa mga days na kasama mo ako ay parang wala lang sa akin ung mga sinasabi mo.</h3>";
+            image.src = "ted.gif";
+        } else if (number === 12) {
+            Info = "<h3>At sorry sa mga araw na napapaiyak ka na lang dahil sakin, sobrang mahal kita baby, ayoko mawala ka sakin, patawad sa lahat.</h3>";
+            image.src = "cry.gif";
+        } else {
+            alert("Invalid input. Please enter a number between 1 and 12.");
+        }
+
+        // Display the result
+        document.write(Info);
+    </script>
+
+<div id="Info"></div>
+
+</body>
+</html>
